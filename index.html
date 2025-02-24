@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Shandy - Portofolio Elegan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Ahmad Shandy</h1>
+            <span class="tagline">Kreativitas Tanpa Batas</span>
+        </div>
+        <i class="fas fa-bars hamburger"></i>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <button class="dark-mode-toggle" aria-label="Ganti Mode Gelap">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Home -->
+        <section id="home" class="hero">
+            <canvas id="particle-canvas"></canvas>
+            <div class="hero-content">
+                <h1>Selamat Datang!</h1>
+                <p class="subtitle">Saya Ahmad Shandy, seorang kreator yang menggabungkan keindahan klasik dan inovasi modern. Temukan karya saya di sini.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/hysands" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/hysandss_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@monkey_d_shandss" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="#portfolio" class="cta-btn">Lihat Portofolio</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="luffy.jpeg" alt="Foto Shandy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="about" class="about">
+            <h2>Tentang Saya</h2>
+            <div class="about-container">
+                <p>Saya seorang pengembang web dan desainer UI/UX yang bersemangat menciptakan solusi elegan dan fungsional. Saya percaya bahwa desain yang baik adalah perpaduan antara estetika dan kegunaan.</p>
+                <p>Di luar dunia kode, saya menikmati menggambar, bereksperimen dengan alat baru, dan menikmati secangkir teh sambil merencanakan proyek berikutnya.</p>
+            </div>
+        </section>
+
+        <!-- Bagian Portofolio -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portofolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-card" data-tilt data-keywords="web modern html css js">
+                    <div class="card-front">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Proyek 1">
+                        <div class="card-overlay">
+                            <h3>Website</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Website</h3>
+                        <p>Web dirancang secara modern dengan desain elegan menggunakan HTML, CSS, & JS.</p>
+                        <p><strong>Teknologi:</strong> HTML, CSS, JavaScript</p>
+                        <a href="#" class="card-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-tilt data-keywords="harga terjangkau murah cepat">
+                    <div class="card-front">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Proyek 2">
+                        <div class="card-overlay">
+                            <h3>Harga yang Terjangkau</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Harga yang Terjangkau</h3>
+                        <p>Saya akan membuatkan anda website dengan harga yang murah dan deadline yang memungkinkan bisa jadi dalam sehari.</p>
+                        <p><strong>Teknologi:</strong> HTML, CSS</p>
+                        <a href="#" class="card-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" data-tilt data-keywords="fitur minimalis visual">
+                    <div class="card-front">
+                        <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2" alt="Proyek 3">
+                        <div class="card-overlay">
+                            <h3>Fitur</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Fitur</h3>
+                        <p>Situs minimalis dengan visual menawan dengan banyak fitur didalamnya.</p>
+                        <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+                        <a href="#" class="card-link">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact" class="contact">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-container">
+                <p>Ayo berkolaborasi untuk menciptakan sesuatu yang luar biasa:</p>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                    <button type="submit" class="form-submit-btn">Kirim Pesan</button>
+                </form>
+                <div class="footer-social">
+                    <a href="https://twitter.com/hysands" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/hysandss_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+62882003827976" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Ahmad Shandy. Hak Cipta Dilindungi.</p>
+        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Tombol Scroll to Top -->
+    <div class="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+        <span class="scroll-percentage">0%</span>
+    </div>
+
+    <!-- Skrip Eksternal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
